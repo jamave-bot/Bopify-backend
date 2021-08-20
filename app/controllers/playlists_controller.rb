@@ -4,6 +4,10 @@ class PlaylistsController < ApplicationController
     before_action :authorized, only: [:create, :destroy]
     rescue_from ActiveRecord::RecordInvalid, with: :show_errors
 
+    def index
+        render json: Playlist.all
+    end
+
     def create
         playlist = @user.playlists.create!(playlist_params)
         render json: playlist
