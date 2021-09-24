@@ -1,24 +1,13 @@
-# README
+# Bopify Backend
+This repo is the Rails backend of the app Bopify. See frontend features [here](https://github.com/jamave-bot/Bopify-frontend).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+* Ruby version 2.7.4
+* Database uses PostgreSQL
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Installation and setup
+To launch the database run
+```
+rails s
+```
+This will open your backend on port `3000`
